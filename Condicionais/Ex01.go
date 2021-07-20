@@ -1,3 +1,4 @@
+// Faça um programa em que 3 variáveis recebem valores diferentes e informa qual a variável com maior valor.
 package main
 
 import "fmt"
@@ -19,11 +20,9 @@ func main() {
 
 	if valores[0] >= valores[1] && valores[0] >= valores[2] {
 		fmt.Printf("O maior valor é %v.", valores[0])
-	}
-	if valores[1] >= valores[0] && valores[1] >= valores[2] {
+	} else if valores[1] >= valores[0] && valores[1] >= valores[2] {
 		fmt.Printf("O maior valor é %v.", valores[1])
-	}
-	if valores[2] >= valores[0] && valores[2] >= valores[1] {
+	} else if valores[2] >= valores[0] && valores[2] >= valores[1] {
 		fmt.Printf("O maior valor é %v.", valores[2])
 	}
 }

@@ -1,3 +1,4 @@
+// Faça um programa que testa se um número passado em uma variável é 0, múltiplo de 2, múltiplo de 3 ou nenhuma das opções.
 package main
 
 import "fmt"
