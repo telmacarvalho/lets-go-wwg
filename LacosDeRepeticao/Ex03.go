@@ -4,37 +4,13 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
-	for i := 0; i < 1; i++ {
-		fmt.Printf("%d\n", i+1)
-		for i := 1; i < 2; i++ {
-			fmt.Printf("%d%d\n", i, i+1)
-			for i := 2; i < 3; i++ {
-				fmt.Printf("%d%d%d\n", i-1, i, i+1)
-				for i := 3; i < 4; i++ {
-					fmt.Printf("%d%d%d%d\n", i-2, i-1, i, i+1)
-					for i := 4; i < 5; i++ {
-						fmt.Printf("%d%d%d%d%d\n", i-3, i-2, i-1, i, i+1)
-						for i := 5; i < 6; i++ {
-							fmt.Printf("%d%d%d%d%d%d\n", i-4, i-3, i-2, i-1, i, i+1)
-							for i := 6; i < 7; i++ {
-								fmt.Printf("%d%d%d%d%d%d%d\n", i-5, i-4, i-3, i-2, i-1, i, i+1)
-								for i := 7; i < 8; i++ {
-									fmt.Printf("%d%d%d%d%d%d%d%d\n", i-6, i-5, i-4, i-3, i-2, i-1, i, i+1)
-									for i := 8; i < 9; i++ {
-										fmt.Printf("%d%d%d%d%d%d%d%d%d\n", i-7, i-6, i-5, i-4, i-3, i-2, i-1, i, i+1)
-										for i := 9; i < 10; i++ {
-											fmt.Printf("%d%d%d%d%d%d%d%d%d%d\n", i-8, i-7, i-6, i-5, i-4, i-3, i-2, i-1, i, i+1)
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+	var a string
+	for i := 0; i < 10; i++ {
+		a += strconv.Itoa(i + 1)
+		fmt.Println(a)
 	}
 }
